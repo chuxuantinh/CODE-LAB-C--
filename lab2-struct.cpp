@@ -10,14 +10,13 @@ typedef struct Diem{
 } diem;
 
 
-void Nhaptoado(diem &N, char name)
+void Nhaptoado(diem N)
 {
-    cout<<"Nhap toa do %c";cin>>name;
-    cout<<"Nhap toa do x:"; cin>>&N.x;
-    cout<<"Nhap toa do y:"; cin>>&N.y;
+    cout<<"Nhap toa do x:"; cin>> &N.x;
+    cout<<"Nhap toa do y:"; cin>> &N.y;
 }
 
-double Tinh_Khoang_Cach(diem X, diem Y)
+double Tinh_Khoang_Cach(Diem X, Diem Y)
 {
     double kc;
     kc = sqrt(pow((X.x-Y.x),2)+ pow((X.y-Y.y),2));
@@ -27,9 +26,9 @@ double Tinh_Khoang_Cach(diem X, diem Y)
 int main()
 {
 
-    diem A, B;
-    Nhaptoado(A,'A');
-    Nhaptoado(B,'B');
+    Diem A, B;
+    Nhaptoado(A);
+    Nhaptoado(B);
     cout<<"Khoang cach la:" <<Tinh_Khoang_Cach(A,B);
     return 0;
 }
