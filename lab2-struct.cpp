@@ -1,16 +1,20 @@
+#include <math.h>
+#include <stdio.h>
 #include <iostream>
 
-struct toado{
-    double x,y,z;
+using namespace std;
+
+typedef struct Diem{
+    double x,y;
 
 } diem;
 
 
-void Nhaptoado(diem N)
+void Nhaptoado(diem &N, char name)
 {
-    cout<<"Nhap toa do %c";cin>>N;
-    cout<<"Nhap toa do x:"; cin>>N.x;
-    cout<<"Nhao toa do y:"; cin>>N.y;
+    cout<<"Nhap toa do %c";cin>>name;
+    cout<<"Nhap toa do x:"; cin>>&N.x;
+    cout<<"Nhap toa do y:"; cin>>&N.y;
 }
 
 double Tinh_Khoang_Cach(diem X, diem Y)
@@ -23,6 +27,9 @@ double Tinh_Khoang_Cach(diem X, diem Y)
 int main()
 {
 
-
-    
+    diem A, B;
+    Nhaptoado(A,'A');
+    Nhaptoado(B,'B');
+    cout<<"Khoang cach la:" <<Tinh_Khoang_Cach(A,B);
+    return 0;
 }
