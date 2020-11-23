@@ -14,7 +14,7 @@ void In_binh_phuong()
     }
 }
 
-//In ra n con số, mỗi con số trên 1 hàng ( 1+1, 1+2, 1+2+3)
+//In ra n con số, mỗi con số trên 1 hàng ( 1+1, 1+2, 1+2+3) //slide 66 chuong 1
 
 void In_Xuong_Hang()
 {
