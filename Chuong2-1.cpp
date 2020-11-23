@@ -1,6 +1,7 @@
 #include <iostream>
 #include <math.h>
 
+
 using namespace std;
 
 
@@ -25,9 +26,22 @@ void In_Xuong_Hang()
         tong = tong + i;
         cout<<tong<<endl;
     }
-    
+}
 
 
+void In_Xuong_Hang2()
+{
+    int n;
+    cout<<"Nhap vao so n:" ; cin>>n;
+    for(int i =0; i<=n; i++)
+    {
+        int tong =0; // chu tong phai de o day, neu o global =>> ket qua khac ?
+        for (int j =1; j<=i; j++)
+        {
+            tong = tong + j;
+        }
+        cout<<tong<<endl;
+    }
 }
 
 int main()
@@ -35,4 +49,5 @@ int main()
 {
     //In_binh_phuong();
     In_Xuong_Hang();
+    In_Xuong_Hang2();
 }
