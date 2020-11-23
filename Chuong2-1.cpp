@@ -48,6 +48,11 @@ int main()
 
 {
     //In_binh_phuong();
-    In_Xuong_Hang();
+    //In_Xuong_Hang();
     In_Xuong_Hang2();
+    printf("Ho Chi Minh city University of Technology\n"); 
+    printf("Programming Fundamentals");
+    printf("\"Hello\nWorld!\"" );
+
+
 }
