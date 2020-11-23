@@ -44,6 +44,18 @@ void In_Xuong_Hang2()
     }
 }
 
+//chuong 5
+void Test_While()
+{
+    int i=0, n=10 ; // khoi dong tri cho i -> moi in
+    //cout << "Nhap vao so lan in:" ;cin>>i;
+    while (i<=10)
+    {
+        cout<<"Hello!"<<endl;
+        i++;
+    }
+}
+
 int main()
 
 {
@@ -53,6 +65,7 @@ int main()
     printf("Ho Chi Minh city University of Technology\n"); 
     printf("Programming Fundamentals");
     printf("\"Hello\nWorld!\"" );
+    Test_While();
 
 
 }
