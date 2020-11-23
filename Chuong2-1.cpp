@@ -56,6 +56,24 @@ void Test_While()
     }
 }
 
+// Tinh tong, trung binh cua n so nhap tu ban phim;
+
+// In 10 chu hello xuong hang
+
+void In_Hello()
+{
+    int i =1; 
+    for (i =1; i<=100; i++)
+    {
+        cout<<"Hello";
+        if (i%10 ==0)
+        {
+            cout<<endl;
+        }
+        
+    }
+}
+
 int main()
 
 {
@@ -66,6 +84,8 @@ int main()
     printf("Programming Fundamentals");
     printf("\"Hello\nWorld!\"" );
     Test_While();
+    In_Hello();
+
 
 
 }
