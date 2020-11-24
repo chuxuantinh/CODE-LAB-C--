@@ -55,8 +55,18 @@ int main()
         sum =sum + a[i];
     }
     cout<<"Tong:"<< sum;
-    cout<<"Trung binh là"<< sum/n;
-
+    cout<<"Trung binh là"<< sum/n << endl;
+    // In day con tang dan
+    
+    for (int i=0; i<=n;i++)
+    {
+        cout<< a[i]; cout<<",";
+        if (a[i] > a[i+1])
+        {
+            cout<< endl;
+        }
+        
+    }
 
 
     
