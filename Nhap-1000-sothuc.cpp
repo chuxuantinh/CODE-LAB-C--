@@ -38,7 +38,7 @@ int main()
     //Tìm gia trị lon nhat trong mang so thuc
     //find_max(a[i], n);
     float ln= a[0];
-    for(int i=1; i<n; i++)
+    for(int i=0; i<=n; i++)
     {
         if (a[i] >ln)
         {
@@ -46,6 +46,16 @@ int main()
         }
     }
     cout<< "So lon nhat:"<<ln;
+
+    // In Gia tri Trung bình
+
+    float sum =0;
+    for (int i=0; i<=n;i++)
+    {
+        sum =sum + a[i];
+    }
+    cout<<"Tong:"<< sum;
+    cout<<"Trung binh là"<< sum/n;
 
 
 
