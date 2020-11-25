@@ -65,8 +65,19 @@ int main()
         {
             cout<< endl;
         }
-        
     }
+
+    //Tim min
+    for( int i =1 ; i<=n; i++)
+    {
+        int nn = a[0];
+        if (a[i]< nn)
+        {
+            nn = a[i];
+        }
+        cout<<"Nho nhat:"<<nn;
+    }
+  
 
 
     
