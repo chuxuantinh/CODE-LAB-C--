@@ -17,6 +17,30 @@ float find_max(float a[], int n)
     
 }
 
+float Day_Binh_Phuong(float a[], int n)
+{
+    for(int i =0; i<=n; i++)
+    {
+        a[i] = pow(i,2);
+    }
+
+
+}
+
+// Kiem tra so nguyen to va in tich cua cac so nguyen to < n
+//Check so nguyen to
+bool isPrime(int n)
+{
+    //loop from 2 to n/2 to check
+    for (int i = 2; i <= n / 2; i++)
+    {
+        if (n % i == 0)
+            return false;
+    }
+    return true;
+}
+
+
 int main()
 
 {
@@ -91,6 +115,16 @@ int main()
         cout <<"TH10";
         break;
     }
+
+    /*
+    // In mang nguoc lai;
+    for (int i = n; i>=0 ; i++)
+    {
+        cout<< a[i];
+    }
+    */
+
+
   
 
 
