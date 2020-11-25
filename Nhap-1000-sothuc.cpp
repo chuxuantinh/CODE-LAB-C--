@@ -77,6 +77,20 @@ int main()
         }
         cout<<"Nho nhat:"<<nn;
     }
+
+    // Swicth case
+    int c1;
+    cout<<"Nhap c1:" ;cin>>c1;
+    //int th1;
+    switch(c1)
+    {
+    case 0:
+        cout<<"TH0:";
+        break;
+    case 10:
+        cout <<"TH10";
+        break;
+    }
   
 
 
