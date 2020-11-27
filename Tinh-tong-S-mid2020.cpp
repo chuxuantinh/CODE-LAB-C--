@@ -4,6 +4,23 @@
 
 using namespace std;
 
+
+
+float GiaiThua(int n)
+{
+    if(n==1)
+        return 1;
+    return GiaiThua(n-1)*n;
+}
+
+float Tinh(int x, int n)
+{
+    if(n == 1)
+        return 1;
+    return Tinh(x,n-1) + pow((-1),n)*((pow(x,n)/GiaiThua(n)));
+}
+
+
 int main()
 {
     double S = 1; int i,n;
@@ -22,5 +39,8 @@ int main()
     }
     //cout<<S;
     
+
+    cout<<"Ket qua "<<Tinh(1,2) <<endl;
+    return 0;
     
 }
